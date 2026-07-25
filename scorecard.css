@@ -15,7 +15,12 @@
 .mk-total-row {
   display: contents;
 }
-
+.mk-top-header-row .mk-cell {
+  background: #90ee90;   /* green header */
+  font-weight: bold;
+  grid-column: 1 / -1;   /* span full width */
+  text-align: center;
+}
 /* Generic cell */
 .mk-cell {
   background: #ffffff;
