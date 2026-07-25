@@ -8,6 +8,13 @@
   margin: 0;
   padding: 0;
 }
+/* Make row wrappers transparent to the grid */
+.mk-header-row,
+.mk-hc-row,
+.mk-hole-row,
+.mk-total-row {
+  display: contents;
+}
 
 /* Generic cell */
 .mk-cell {
