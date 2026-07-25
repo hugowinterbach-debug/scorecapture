@@ -25,12 +25,17 @@
 }
 
 /* === HEADER BAR === */
-.mk-row-1 .mk-cell {
+.mk-row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #0b3d0b;
   color: #fff;
-  font-weight: 700;
+  font-weight: bold;
   font-style: italic;
+  height: 26px; /* mobile height */
 }
+
 
 /* === PLAYER HEADER === */
 .mk-row-2 .mk-cell {
