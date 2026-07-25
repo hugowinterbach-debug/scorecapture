@@ -81,7 +81,7 @@
 @media (max-width: 600px) {
 
   .mk-row-1 { height: 26px; }
-  .mk-row-2 { height: 32px; }
+  .mk-row-2 { height: 30px; }
   .mk-row-3 { height: 24px; }
   .mk-row-4 { height: 24px; }
 
@@ -91,6 +91,6 @@
   .mk-in-row  { height: 24px; }
   .mk-tot-row { height: 26px; }
 
-  .mk-footer-row { height: 32px; }
+  .mk-footer-row { height: 30px; }
 }
 }
