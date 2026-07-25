@@ -1,7 +1,8 @@
 .mk-scorecard {
+.mk-scorecard {
   display: grid;
   grid-template-columns:
-    60px 60px 60px 100px 120px 100px 120px 100px 120px 100px 120px 80px;
+    6% 6% 6% 10% 10% 10% 10% 10% 10% 10% 10% 6%;
   grid-auto-rows: 32px;
   gap: 1px;
   background: #000;
