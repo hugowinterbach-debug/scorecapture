@@ -1,416 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>MosselKraker Scorecard</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="scorecard.css">
+  <meta charset="UTF-8">
+  <title>Mosselbaai Scorecard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="scorecard.css">
 </head>
 <body>
 
 <div class="mk-scorecard">
 
-  <!-- GREEN TOP HEADER -->
-  <div class="mk-top-header-row">
-    <div class="mk-cell mk-top-left">Mosselbaai – Grp 10</div>
-    <div class="mk-cell mk-top-mid">2026/07/24</div>
-    <div class="mk-cell mk-top-right">Synced</div>
-  </div>
+  <!-- ROW 1: HEADER -->
+  <div class="mk-row-1 mk-cell" style="grid-column: 1 / 5;">Mosselbaai</div>
+  <div class="mk-row-1 mk-cell" style="grid-column: 5 / 7;">Grp 10</div>
+  <div class="mk-row-1 mk-cell" style="grid-column: 7 / 9;"></div>
+  <div class="mk-row-1 mk-cell" style="grid-column: 9 / 11;">2026-07-24</div>
+  <div class="mk-row-1 mk-cell" style="grid-column: 11 / 13;">Synced</div>
 
-  <!-- PLAYER HEADER -->
-  <div class="mk-header-row">
-    <div class="mk-cell mk-hole">H</div>
-    <div class="mk-cell mk-par">P</div>
-    <div class="mk-cell mk-si">S</div>
-    <div class="mk-cell mk-player-label">Player</div>
-    <div class="mk-cell mk-player-head">Carl Wannenburg</div>
-    <div class="mk-cell mk-player-head">Dawid Gerber</div>
-    <div class="mk-cell mk-player-head">At Harvey</div>
-    <div class="mk-cell mk-player-head">Philip Claase</div>
-    <div class="mk-cell mk-comp">C</div>
-  </div>
+  <!-- ROW 2: PLAYER NAMES -->
+  <div class="mk-row-2 mk-cell mk-player-label" style="grid-column: 1 / 4;">Player</div>
+  <div class="mk-row-2 mk-cell mk-player-head" style="grid-column: 4 / 6;">Carl Wannenburg</div>
+  <div class="mk-row-2 mk-cell mk-player-head" style="grid-column: 6 / 8;">Dawid Gerber</div>
+  <div class="mk-row-2 mk-cell mk-player-head" style="grid-column: 8 / 10;">At Harvey</div>
+  <div class="mk-row-2 mk-cell mk-player-head" style="grid-column: 10 / 12;">Philip Claase</div>
+  <div class="mk-row-2 mk-cell mk-comp" style="grid-column: 12 / 13;"></div>
 
-  <!-- HANDICAP ROW -->
-  <div class="mk-hc-row">
-    <div class="mk-cell mk-hole">HC</div>
-    <div class="mk-cell mk-par"></div>
-    <div class="mk-cell mk-si"></div>
-    <div class="mk-cell mk-hc">23</div>
-    <div class="mk-cell mk-hc">11</div>
-    <div class="mk-cell mk-hc">15</div>
-    <div class="mk-cell mk-hc">25</div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 3: HANDICAP -->
+  <div class="mk-row-3 mk-cell" style="grid-column: 1 / 4;">HC</div>
+  <div class="mk-row-3 mk-cell mk-hc" style="grid-column: 4 / 6;">23</div>
+  <div class="mk-row-3 mk-cell mk-hc" style="grid-column: 6 / 8;">11</div>
+  <div class="mk-row-3 mk-cell mk-hc" style="grid-column: 8 / 10;">15</div>
+  <div class="mk-row-3 mk-cell mk-hc" style="grid-column: 10 / 12;">25</div>
+  <div class="mk-row-3 mk-cell mk-hc" style="grid-column: 12 / 13;"></div>
 
-  <!-- COLUMN HEADER ROW -->
-  <div class="mk-column-header-row">
-    <div class="mk-cell mk-hole">H</div>
-    <div class="mk-cell mk-par">P</div>
-    <div class="mk-cell mk-si">S</div>
-    <div class="mk-cell mk-label">Gr</div>
-    <div class="mk-cell mk-label">Pt</div>
-    <div class="mk-cell mk-label">Gr</div>
-    <div class="mk-cell mk-label">Pt</div>
-    <div class="mk-cell mk-label">Gr</div>
-    <div class="mk-cell mk-label">Pt</div>
-    <div class="mk-cell mk-label">Gr</div>
-    <div class="mk-cell mk-label">Pt</div>
-    <div class="mk-cell mk-comp">C</div>
-  </div>
+  <!-- ROW 4: COLUMN HEADERS -->
+  <div class="mk-row-4 mk-cell mk-hole">H</div>
+  <div class="mk-row-4 mk-cell mk-par">P</div>
+  <div class="mk-row-4 mk-cell mk-si">S</div>
+  <div class="mk-row-4 mk-cell mk-label">Gr</div>
+  <div class="mk-row-4 mk-cell mk-label">Pt</div>
+  <div class="mk-row-4 mk-cell mk-label">Gr</div>
+  <div class="mk-row-4 mk-cell mk-label">Pt</div>
+  <div class="mk-row-4 mk-cell mk-label">Gr</div>
+  <div class="mk-row-4 mk-cell mk-label">Pt</div>
+  <div class="mk-row-4 mk-cell mk-label">Gr</div>
+  <div class="mk-row-4 mk-cell mk-label">Pt</div>
+  <div class="mk-row-4 mk-cell mk-comp">C</div>
 
-  <!-- 18 HOLES -->
-  <!-- Hole template repeated 18 times -->
-  <!-- Hole numbers, par, SI are placeholders; adjust as needed -->
+    <!-- ROW 5: HOLE 1 -->
+  <div class="mk-hole-row mk-cell mk-hole">1</div>
+  <div class="mk-hole-row mk-cell mk-par">4</div>
+  <div class="mk-hole-row mk-cell mk-si">13</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h1gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h1pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h1gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h1pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h1gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h1pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h1gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h1pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h1c"></div>
 
-  <!-- HOLE 1 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">1</div>
-    <div class="mk-cell mk-par">4</div>
-    <div class="mk-cell mk-si">13</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 6: HOLE 2 -->
+  <div class="mk-hole-row mk-cell mk-hole">2</div>
+  <div class="mk-hole-row mk-cell mk-par">5</div>
+  <div class="mk-hole-row mk-cell mk-si">9</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h2gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h2pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h2gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h2pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h2gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h2pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h2gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h2pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h2c"></div>
 
-  <!-- HOLE 2 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">2</div>
-    <div class="mk-cell mk-par">4</div>
-    <div class="mk-cell mk-si">9</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 7: HOLE 3 -->
+  <div class="mk-hole-row mk-cell mk-hole">3</div>
+  <div class="mk-hole-row mk-cell mk-par">4</div>
+  <div class="mk-hole-row mk-cell mk-si">5</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h3gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h3pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h3gB"></div>
+  <div class="mk-hole-row mk-cell mk-cell mk-score-pts" id="h3pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h3gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h3pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h3gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h3pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h3c"></div>
 
-  <!-- HOLE 3 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">3</div>
-    <div class="mk-cell mk-par">3</div>
-    <div class="mk-cell mk-si">5</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 8: HOLE 4 -->
+  <div class="mk-hole-row mk-cell mk-hole">4</div>
+  <div class="mk-hole-row mk-cell mk-par">3</div>
+  <div class="mk-hole-row mk-cell mk-si">17</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h4gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h4pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h4gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h4pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h4gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h4pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h4gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h4pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h4c"></div>
 
-  <!-- HOLES 4–18 -->
-  <!-- I will generate them automatically below -->
+  <!-- ROW 9: HOLE 5 -->
+  <div class="mk-hole-row mk-cell mk-hole">5</div>
+  <div class="mk-hole-row mk-cell mk-par">5</div>
+  <div class="mk-hole-row mk-cell mk-si">1</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h5gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h5pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h5gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h5pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h5gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h5pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h5gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h5pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h5c"></div>
 
-  <!-- HOLE 4 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">4</div>
-    <div class="mk-cell mk-par">5</div>
-    <div class="mk-cell mk-si">17</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 10: HOLE 6 -->
+  <div class="mk-hole-row mk-cell mk-hole">6</div>
+  <div class="mk-hole-row mk-cell mk-par">4</div>
+  <div class="mk-hole-row mk-cell mk-si">11</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h6gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h6pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h6gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h6pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h6gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h6pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h6gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h6pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h6c"></div>
 
-  <!-- HOLE 5 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">5</div>
-    <div class="mk-cell mk-par">4</div>
-    <div class="mk-cell mk-si">1</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 11: HOLE 7 -->
+  <div class="mk-hole-row mk-cell mk-hole">7</div>
+  <div class="mk-hole-row mk-cell mk-par">4</div>
+  <div class="mk-hole-row mk-cell mk-si">7</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h7gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h7pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h7gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h7pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h7gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h7pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h7gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h7pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h7c"></div>
 
-  <!-- HOLE 6 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">6</div>
-    <div class="mk-cell mk-par">3</div>
-    <div class="mk-cell mk-si">15</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 12: HOLE 8 -->
+  <div class="mk-hole-row mk-cell mk-hole">8</div>
+  <div class="mk-hole-row mk-cell mk-par">3</div>
+  <div class="mk-hole-row mk-cell mk-si">15</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h8gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h8pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h8gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h8pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h8gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h8pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h8gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h8pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h8c"></div>
 
-  <!-- HOLE 7 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">7</div>
-    <div class="mk-cell mk-par">4</div>
-    <div class="mk-cell mk-si">7</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 13: HOLE 9 -->
+  <div class="mk-hole-row mk-cell mk-hole">9</div>
+  <div class="mk-hole-row mk-cell mk-par">4</div>
+  <div class="mk-hole-row mk-cell mk-si">3</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h9gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h9pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h9gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h9pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h9gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h9pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h9gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h9pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h9c"></div>
 
-  <!-- HOLE 8 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">8</div>
-    <div class="mk-cell mk-par">5</div>
-    <div class="mk-cell mk-si">11</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
 
-  <!-- HOLE 9 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">9</div>
-    <div class="mk-cell mk-par">4</div>
-    <div class="mk-cell mk-si">3</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+    <!-- ROW 14: OUT TOTALS -->
+  <div class="mk-out-row mk-cell mk-hole">OUT</div>
+  <div class="mk-out-row mk-cell mk-par">36</div>
+  <div class="mk-out-row mk-cell mk-si"></div>
+  <div class="mk-out-row mk-cell mk-total" id="outgA"></div>
+  <div class="mk-out-row mk-cell mk-total" id="outpA"></div>
+  <div class="mk-out-row mk-cell mk-total" id="outgB"></div>
+  <div class="mk-out-row mk-cell mk-total" id="outpB"></div>
+  <div class="mk-out-row mk-cell mk-total" id="outgC"></div>
+  <div class="mk-out-row mk-cell mk-total" id="outpC"></div>
+  <div class="mk-out-row mk-cell mk-total" id="outgD"></div>
+  <div class="mk-out-row mk-cell mk-total" id="outpD"></div>
+  <div class="mk-out-row mk-cell mk-comp" id="outc"></div>
 
-  <!-- HOLE 10 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">10</div>
-    <div class="mk-cell mk-par">4</div>
-    <div class="mk-cell mk-si">10</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 15: HOLE 10 -->
+  <div class="mk-hole-row mk-cell mk-hole">10</div>
+  <div class="mk-hole-row mk-cell mk-par">4</div>
+  <div class="mk-hole-row mk-cell mk-si">14</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h10gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h10pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h10gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h10pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h10gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h10pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h10gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h10pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h10c"></div>
 
-  <!-- HOLE 11 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">11</div>
-    <div class="mk-cell mk-par">5</div>
-    <div class="mk-cell mk-si">18</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 16: HOLE 11 -->
+  <div class="mk-hole-row mk-cell mk-hole">11</div>
+  <div class="mk-hole-row mk-cell mk-par">5</div>
+  <div class="mk-hole-row mk-cell mk-si">6</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h11gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h11pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h11gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h11pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h11gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h11pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h11gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h11pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h11c"></div>
 
-  <!-- HOLE 12 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">12</div>
-    <div class="mk-cell mk-par">3</div>
-    <div class="mk-cell mk-si">6</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 17: HOLE 12 -->
+  <div class="mk-hole-row mk-cell mk-hole">12</div>
+  <div class="mk-hole-row mk-cell mk-par">3</div>
+  <div class="mk-hole-row mk-cell mk-si">8</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h12gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h12pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h12gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h12pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h12gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h12pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h12gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h12pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h12c"></div>
 
-  <!-- HOLE 13 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">13</div>
-    <div class="mk-cell mk-par">4</div>
-    <div class="mk-cell mk-si">12</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 18: HOLE 13 -->
+  <div class="mk-hole-row mk-cell mk-hole">13</div>
+  <div class="mk-hole-row mk-cell mk-par">4</div>
+  <div class="mk-hole-row mk-cell mk-si">12</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h13gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h13pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h13gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h13pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h13gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h13pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h13gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h13pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h13c"></div>
 
-  <!-- HOLE 14 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">14</div>
-    <div class="mk-cell mk-par">4</div>
-    <div class="mk-cell mk-si">4</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 19: HOLE 14 -->
+  <div class="mk-hole-row mk-cell mk-hole">14</div>
+  <div class="mk-hole-row mk-cell mk-par">4</div>
+  <div class="mk-hole-row mk-cell mk-si">2</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h14gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h14pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h14gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h14pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h14gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h14pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h14gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h14pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h14c"></div>
 
-  <!-- HOLE 15 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">15</div>
-    <div class="mk-cell mk-par">5</div>
-    <div class="mk-cell mk-si">16</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 20: HOLE 15 -->
+  <div class="mk-hole-row mk-cell mk-hole">15</div>
+  <div class="mk-hole-row mk-cell mk-par">3</div>
+  <div class="mk-hole-row mk-cell mk-si">18</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h15gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h15pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h15gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h15pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h15gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h15pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h15gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h15pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h15c"></div>
 
-  <!-- HOLE 16 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">16</div>
-    <div class="mk-cell mk-par">3</div>
-    <div class="mk-cell mk-si">8</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 21: HOLE 16 -->
+  <div class="mk-hole-row mk-cell mk-hole">16</div>
+  <div class="mk-hole-row mk-cell mk-par">4</div>
+  <div class="mk-hole-row mk-cell mk-si">10</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h16gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h16pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h16gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h16pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h16gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h16pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h16gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h16pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h16c"></div>
 
-  <!-- HOLE 17 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">17</div>
-    <div class="mk-cell mk-par">4</div>
-    <div class="mk-cell mk-si">14</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
-    <!-- HOLE 18 -->
-  <div class="mk-hole-row">
-    <div class="mk-cell mk-hole">18</div>
-    <div class="mk-cell mk-par">4</div>
-    <div class="mk-cell mk-si">2</div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-score-gross"></div>
-    <div class="mk-cell mk-score-pts"></div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 22: HOLE 17 -->
+  <div class="mk-hole-row mk-cell mk-hole">17</div>
+  <div class="mk-hole-row mk-cell mk-par">5</div>
+  <div class="mk-hole-row mk-cell mk-si">4</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h17gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h17pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h17gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h17pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h17gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h17pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h17gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h17pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h17c"></div>
 
-  <!-- OUT ROW -->
-  <div class="mk-total-row mk-out-row">
-    <div class="mk-cell mk-hole">OUT</div>
-    <div class="mk-cell mk-par">36</div>
-    <div class="mk-cell mk-si"></div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-comp">0</div>
-  </div>
+  <!-- ROW 23: HOLE 18 -->
+  <div class="mk-hole-row mk-cell mk-hole">18</div>
+  <div class="mk-hole-row mk-cell mk-par">4</div>
+  <div class="mk-hole-row mk-cell mk-si">16</div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h18gA"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h18pA"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h18gB"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h18pB"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h18gC"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h18pC"></div>
+  <div class="mk-hole-row mk-cell mk-score-gross" id="h18gD"></div>
+  <div class="mk-hole-row mk-cell mk-score-pts"   id="h18pD"></div>
+  <div class="mk-hole-row mk-cell mk-comp"        id="h18c"></div>
 
-  <!-- IN ROW -->
-  <div class="mk-total-row mk-in-row">
-    <div class="mk-cell mk-hole">IN</div>
-    <div class="mk-cell mk-par">36</div>
-    <div class="mk-cell mk-si"></div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-comp">0</div>
-  </div>
 
-  <!-- TOT ROW -->
-  <div class="mk-total-row mk-tot-row">
-    <div class="mk-cell mk-hole">TOT</div>
-    <div class="mk-cell mk-par">72</div>
-    <div class="mk-cell mk-si"></div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-total">0</div>
-    <div class="mk-cell mk-comp">0</div>
-  </div>
+    <!-- ROW 24: IN TOTALS -->
+  <div class="mk-in-row mk-cell mk-hole">IN</div>
+  <div class="mk-in-row mk-cell mk-par">36</div>
+  <div class="mk-in-row mk-cell mk-si"></div>
+  <div class="mk-in-row mk-cell mk-total" id="ingA"></div>
+  <div class="mk-in-row mk-cell mk-total" id="inpA"></div>
+  <div class="mk-in-row mk-cell mk-total" id="ingB"></div>
+  <div class="mk-in-row mk-cell mk-total" id="inpB"></div>
+  <div class="mk-in-row mk-cell mk-total" id="ingC"></div>
+  <div class="mk-in-row mk-cell mk-total" id="inpC"></div>
+  <div class="mk-in-row mk-cell mk-total" id="ingD"></div>
+  <div class="mk-in-row mk-cell mk-total" id="inpD"></div>
+  <div class="mk-in-row mk-cell mk-comp" id="inc"></div>
 
-  <!-- FOOTER NAMES -->
-  <div class="mk-footer-row">
-    <div class="mk-cell mk-hole"></div>
-    <div class="mk-cell mk-par"></div>
-    <div class="mk-cell mk-si"></div>
-    <div class="mk-cell mk-footer-name">Carl Wannenburg</div>
-    <div class="mk-cell mk-footer-name">Dawid Gerber</div>
-    <div class="mk-cell mk-footer-name">At Harvey</div>
-    <div class="mk-cell mk-footer-name">Philip Claase</div>
-    <div class="mk-cell mk-comp"></div>
-  </div>
+  <!-- ROW 25: TOT -->
+  <div class="mk-tot-row mk-cell mk-hole">TOT</div>
+  <div class="mk-tot-row mk-cell mk-par">72</div>
+  <div class="mk-tot-row mk-cell mk-si"></div>
+  <div class="mk-tot-row mk-cell mk-total" id="totgA"></div>
+  <div class="mk-tot-row mk-cell mk-total" id="totpA"></div>
+  <div class="mk-tot-row mk-cell mk-total" id="totgB"></div>
+  <div class="mk-tot-row mk-cell mk-total" id="totpB"></div>
+  <div class="mk-tot-row mk-cell mk-total" id="totgC"></div>
+  <div class="mk-tot-row mk-cell mk-total" id="totpC"></div>
+  <div class="mk-tot-row mk-cell mk-total" id="totgD"></div>
+  <div class="mk-tot-row mk-cell mk-total" id="totpD"></div>
+  <div class="mk-tot-row mk-cell mk-comp" id="totc"></div>
+
+  <!-- ROW 26: FOOTER NAMES + EXIT -->
+  <div class="mk-footer-row mk-cell mk-exit" style="grid-column: 1 / 4;">EXIT</div>
+  <div class="mk-footer-row mk-cell mk-footer-name" style="grid-column: 4 / 6;">Carl Wannenburg</div>
+  <div class="mk-footer-row mk-cell mk-footer-name" style="grid-column: 6 / 8;">Dawid Gerber</div>
+  <div class="mk-footer-row mk-cell mk-footer-name" style="grid-column: 8 / 10;">At Harvey</div>
+  <div class="mk-footer-row mk-cell mk-footer-name" style="grid-column: 10 / 12;">Philip Claase</div>
+  <div class="mk-footer-row mk-cell mk-comp" style="grid-column: 12 / 13;"></div>
 
 </div>
 
