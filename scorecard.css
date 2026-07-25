@@ -80,6 +80,7 @@
 /* === MOBILE OPTIMIZATION === */
 @media (max-width: 600px) {
 .mk-cell {
+  border: none;
   .mk-row-1 { height: 26px; }
   .mk-row-2 { height: 30px; }
   .mk-row-3 { height: 24px; }
