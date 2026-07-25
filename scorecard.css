@@ -1,0 +1,68 @@
+/* Base44-style scorecard grid */
+
+.mk-scorecard {
+  display: grid;
+  grid-template-columns: 40px 40px 40px repeat(4, 1fr) 60px;
+  gap: 1px;
+  background: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Generic cell */
+.mk-cell {
+  background: #ffffff;
+  padding: 2px;
+  font-size: 12px;
+  text-align: center;
+  min-height: 28px;
+}
+
+/* Header row */
+.mk-header-row .mk-cell {
+  background: #ffb6c1; /* pink */
+  font-weight: bold;
+}
+
+/* Handicap row */
+.mk-hc-row .mk-hc {
+  background: #add8e6; /* light blue */
+  font-weight: bold;
+}
+
+/* Hole rows */
+.mk-hole-row .mk-hole { background: #ffffff; }
+.mk-hole-row .mk-par  { background: #ffff99; } /* yellow */
+.mk-hole-row .mk-si   { background: #87cefa; } /* blue */
+
+/* Score cells */
+.mk-score {
+  background: #c8e6c9; /* light green */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.mk-score .gross {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.mk-score .pts {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+/* Totals rows */
+.mk-total-row .mk-cell {
+  background: #d4a017; /* gold */
+  font-weight: bold;
+}
+
+/* Footer names */
+.mk-footer-row .mk-footer-name {
+  font-size: 12px;
+  font-weight: bold;
+}
