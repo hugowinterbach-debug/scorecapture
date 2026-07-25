@@ -1,3 +1,4 @@
+/* === GRID LAYOUT === */
 .mk-scorecard {
   display: grid;
   grid-template-columns:
@@ -5,22 +6,84 @@
   grid-auto-rows: 32px;
   gap: 1px;
   background: #000;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 
-
+/* === BASE CELL === */
 .mk-cell {
-  background: #fff;
-  color: #000;
-  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  background: #fff;
   border: 1px solid #000;
   box-sizing: border-box;
 }
+
+/* === HEADER BAR === */
 .mk-row-1 .mk-cell {
-  background: #004d00;
+  background: #0b3d0b;
   color: #fff;
+  font-weight: 700;
   font-style: italic;
-  font-weight: bold;
+}
+
+/* === PLAYER HEADER === */
+.mk-row-2 .mk-cell {
+  background: #e6e6fa;
+  font-weight: 600;
+}
+
+/* === HANDICAP ROW === */
+.mk-row-3 .mk-cell {
+  background: #cce0ff;
+  font-weight: 600;
+}
+
+/* === COLUMN LABELS === */
+.mk-row-4 .mk-cell {
+  background: #ffcc66;
+  font-weight: 600;
+}
+
+/* === HOLE ROWS === */
+.mk-hole-row .mk-cell {
+  background: #dff0d8;
+}
+
+/* === OUT / IN / TOT ROWS === */
+.mk-out-row .mk-cell,
+.mk-in-row .mk-cell,
+.mk-tot-row .mk-cell {
+  background: #d4a017;
+  color: #000;
+  font-weight: 700;
+}
+
+/* === FOOTER === */
+.mk-footer-row .mk-cell {
+  background: #fff;
+  font-weight: 600;
+}
+
+.mk-exit {
+  background: #c0392b;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+/* === MOBILE OPTIMIZATION === */
+@media (max-width: 600px) {
+  .mk-scorecard {
+    grid-auto-rows: 28px;
+  }
+  .mk-cell {
+    font-size: 12px;
+    padding: 2px;
+  }
 }
