@@ -21,6 +21,16 @@
   grid-column: 1 / -1;   /* span full width */
   text-align: center;
 }
+.mk-player-label {
+  background: #ffb6c1;
+  font-weight: bold;
+}
+.mk-column-header-row .mk-cell,
+.mk-label {
+  background: #c8e6c9;  /* same green family */
+  font-weight: bold;
+}
+
 /* Generic cell */
 .mk-cell {
   background: #ffffff;
