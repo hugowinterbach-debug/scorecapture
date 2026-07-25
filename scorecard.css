@@ -1,7 +1,8 @@
 /* === GRID CONTAINER === */
 .mk-scorecard {
   display: grid;
-  grid-template-columns: 40px 40px 40px repeat(8, 1fr) 40px;
+  grid-template-rows: 40px 40px 40px repeat(18, 1fr) 40px;
+  grid-auto-flow: column;
   gap: 1px;
   background: #000;
   margin: 0;
@@ -27,13 +28,14 @@
   text-align: center;
   min-height: 26px;
   box-sizing: border-box;
+  border: 1px solid #000;
 }
 
-/* === GREEN TOP HEADER === */
-.mk-top-header-row .mk-cell {
+/* === GREEN LEFT LABEL COLUMN === */
+.mk-label,
+.mk-column-header-row .mk-cell {
   background: #90ee90;
   font-weight: bold;
-  font-size: 14px;
 }
 
 /* === PINK PLAYER HEADER === */
@@ -42,16 +44,9 @@
   font-weight: bold;
 }
 
-/* === HANDICAP ROW === */
+/* === BLUE HANDICAP ROW === */
 .mk-hc-row .mk-hc {
   background: #add8e6;
-  font-weight: bold;
-}
-
-/* === COLUMN HEADER ROW (Gr / Pt) === */
-.mk-column-header-row .mk-cell,
-.mk-label {
-  background: #c8e6c9;
   font-weight: bold;
 }
 
@@ -88,4 +83,32 @@
 .mk-comp {
   background: #ddd;
   font-weight: bold;
+}
+
+/* === TOP HEADER (COURSE / GROUP / DATE / SYNC) === */
+.mk-top-header-row .mk-cell {
+  background: #90ee90;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 6px;
+}
+
+/* === PLAYER LABEL COLUMN === */
+.mk-player-label {
+  background: #ffb6c1;
+  font-weight: bold;
+}
+
+/* === OPTIONAL COLOR STRIPING FOR PLAYER COLUMNS === */
+.mk-player-head:nth-child(odd),
+.mk-score-gross:nth-child(odd),
+.mk-score-pts:nth-child(odd) {
+  background: #fffacd; /* light yellow */
+}
+
+.mk-player-head:nth-child(even),
+.mk-score-gross:nth-child(even),
+.mk-score-pts:nth-child(even) {
+  background: #add8e6; /* light blue */
 }
