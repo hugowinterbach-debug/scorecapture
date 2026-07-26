@@ -1,4 +1,17 @@
 /* === GRID LAYOUT === */
+.mk-row-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0b3d0b;
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  height: 28px;
+  border: none;
+  padding: 0 6px;
+}
+
 .mk-scorecard {
   display: grid;
   grid-template-columns:
